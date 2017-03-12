@@ -2,7 +2,21 @@
   box-sizing: border-box;
 }
 
+#Override .Header__nav__button {
+  color: red;
+}
 
+#Override .Header__nav__button:hover {
+  background-color: green;
+}
+
+#Override .Header__nav__button:active {
+  background-color: yellow;
+}
+
+.Header__nav {
+  text-align: center;
+}
 
 .blogPost__content__image {
   float: right;

@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+.blogPost__content__image {
+  float: right;
+  width: 34%;
+
+}
+
+.blogPost__title {
+  /*text-align: center;*/
+  font-size: 30px;
+}
+
+.blogPost__content__text {
+  font-size: 18px;
+  line-height: 1.5;
+}

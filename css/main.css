@@ -2,16 +2,22 @@
   box-sizing: border-box;
 }
 
+
+
+.Header__logo__icon {
+  background: url("http://mygoodplanet.com/wp-content/uploads/2017/01/Abbey-Road-1.jpg");
+}
+
 #Override .Header__nav__button {
-  color: red;
+  color: #999999;
 }
 
 #Override .Header__nav__button:hover {
-  background-color: green;
+  background-color: #e5e5e5;
 }
 
 #Override .Header__nav__button:active {
-  background-color: yellow;
+  background-color: white;
 }
 
 .Header__nav {
@@ -32,4 +38,24 @@
 .blogPost__content__text {
   font-size: 18px;
   line-height: 1.5;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0px;
+}
+
+.social {
+  font-size: 2rem;
+}
+
+.videos__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.video {
+  margin: 1em 0;
 }

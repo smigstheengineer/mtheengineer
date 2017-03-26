@@ -2,10 +2,12 @@
   box-sizing: border-box;
 }
 
-
+body {
+  background-color: black;
+}
 
 .Header__logo__icon {
-  background: url("http://mygoodplanet.com/wp-content/uploads/2017/01/Abbey-Road-1.jpg");
+  background: url("http://www.studiogbrooklyn.com/studio/wp-content/uploads/IMG_4636-1024x682.jpg");
 }
 
 #Override .Header__nav__button {
@@ -31,13 +33,19 @@
 }
 
 .blogPost__title {
-  /*text-align: center;*/
   font-size: 30px;
 }
 
 .blogPost__content__text {
   font-size: 18px;
   line-height: 1.5;
+}
+
+.blogPost {
+  margin-bottom: 30px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
 }
 
 .footer {
@@ -48,14 +56,9 @@
 
 .social {
   font-size: 2rem;
-}
-
-.videos__grid {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
-.video {
-  margin: 1em 0;
+#Override .video:first-child {
+  margin-top: 1em;
 }

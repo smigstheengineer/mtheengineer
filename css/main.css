@@ -3,11 +3,29 @@
 }
 
 body {
-  background-color: black;
+  background-color: white;
 }
 
-.Header__logo__icon {
-  background: url("http://www.studiogbrooklyn.com/studio/wp-content/uploads/IMG_4636-1024x682.jpg");
+.Header {
+  padding: 1rem;
+}
+
+.heroContainer {
+  background: url('http://thestiz.com/wp-content/themes/thestiz/images/header1600.jpg') no-repeat center top fixed;
+  display: block;
+  min-height: 300px;
+  width: 100%;
+  margin-top: 0;
+}
+
+.heroContainer__item {
+  color: white;
+  text-align: center;
+  margin: 0 0;
+}
+
+.heroContainer__item--title{
+  text-decoration: underline;
 }
 
 #Override .Header__nav__button {

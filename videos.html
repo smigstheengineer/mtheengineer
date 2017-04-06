@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="css/simple-grid.min.css">
     <link rel="stylesheet" type="text/css" href="css/hover-min.css">
@@ -13,32 +14,37 @@
       <div class="container">
         <div class="col-12">
           <div class="Header">
-            <h2 class="ui center aligned icon header Header__logo">
-              <i class="circular users icon"></i>
-            </h2>
-            <div class="Header__nav">
-              <a href="index.html"><button class="ui black button hvr-push Header__nav__button">Home</button></a>
-              <a href="#"><button class="ui black button Header__nav__button">Channel</button></a>
-            </div>
+           
+           <div class="Header__nav">
+             <a href="index.html"><button class="ui black button hvr-push Header__nav__button">Home</button></a>
+             <a href="videos.html"><button class="ui black button hvr-push Header__nav__button">Videos</button></a>
+             <a href="services.html"><button class="ui black button hvr-push Header__nav__button">Services</button></a>
+             <a href="liveStream.html"><button class="ui black button hvr-push Header__nav__button">Live Stream</button></a>
+             <a href="contact.html"><button class="ui black button hvr-push Header__nav__button">Contact</button></a>
+           </div>
+
           </div>  
         </div>
       </div>
-    </div>  
+    </div> 
+
+    <section class="heroContainer">
+      
+    </section>  
 
     <div class="row">
       <div class="container">
         <div class="col-12">
           <div class="videos">
             <div class="videos__controls">
-            <div id="filters" class="button-group">  
-              <button class="button is-checked showAll" data-filter="*">Show All</button>
-              <button class="button showProTools" data-filter=".proTools">ProTools</button>
-              <button class="button showLogicProX" data-filter=".logicProX">Logic Pro X</button>
-            </div>
+              <div id="filters" class="button-group">  
+                <button class="button is-checked showAll" data-filter="*">Show All</button>
+                <button class="button showProTools" data-filter=".proTools">ProTools</button>
+                <button class="button showLogicProX" data-filter=".logicProX">Logic Pro X</button>
+              </div>
             </div>
 
             <div class="videos__grid grid">
-
               <div class="ui card video grid-item proTools">
                 <div class="image">
                   <img src="https://i.ytimg.com/vi/H6-rDi7t348/maxresdefault.jpg">

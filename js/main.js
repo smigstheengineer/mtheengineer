@@ -1,5 +1,6 @@
 $(function(){
 
+
 var grid = $('.grid').isotope({
   // options
   itemSelector: '.grid-item',
@@ -22,16 +23,19 @@ $(".showLogicProX").click(function() {
   grid.isotope({ filter: '.logicProX' })
 })
  
-$.get( "https://www.googleapis.com/blogger/v3/blogs/4605805113119244244/posts?key=AIzaSyCqUTx5RlpApPEXXEmg0266lnUKLGV3vkY", function( data ) {
-  var blogPost = data.items[0];
+$.get( "https://www.googleapis.com/blogger/v3/blogs/8527536267022331932/posts?key=AIzaSyCqUTx5RlpApPEXXEmg0266lnUKLGV3vkY", function( data ) {
+  var blogPost = data.items[2];
   var blogPostContent = blogPost.content;
   var blogPostTitle = blogPost.title;
+  
   $( ".blogPost__content__text" )
     .html(blogPostContent);
+  
   $('.blogPost__title')
     .html(blogPostTitle);
-
-
 }, "json" );
+
+
+
 
 });

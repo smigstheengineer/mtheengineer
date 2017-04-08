@@ -47,6 +47,7 @@ body {
 .blogPost__content__image {
   float: right;
   width: 34%;
+  margin: 0 0 0 3px;
 
 }
 
@@ -61,9 +62,7 @@ body {
 
 .blogPost {
   margin-bottom: 30px;
-  background-color: white;
-  padding: 30px;
-  border-radius: 20px;
+
 }
 
 .footer {
@@ -80,3 +79,6 @@ body {
 #Override .video:first-child {
   margin-top: 1em;
 }
+
+
+

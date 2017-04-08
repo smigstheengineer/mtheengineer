@@ -7,6 +7,18 @@ var grid = $('.grid').isotope({
 });
 
 
+$('.mobile').click(toggleMenu);
+
+function toggleMenu() {
+
+$('.ui.sidebar')
+  .sidebar('toggle')
+;
+
+}
+
+
+
 $(".showAll").click(function() {
   // console.log("showAll clicked")
   grid.isotope({ filter: '*' })
@@ -33,7 +45,7 @@ $.get( "https://www.googleapis.com/blogger/v3/blogs/8527536267022331932/posts?ke
   // console.log(element)
 
     var data =  "<div class='blogPost'><div class='blogPost__title'>" + element.title + "</div>" + 
-     "<div class='blogPost__content'><img class='blogPost__content__image' src='assets/blogPhoto1.png>" +
+     "<div class='blogPost__content'>"+
      "<p class='blogPost__content__text'>" +
      element.content +
      "</p></div>"
@@ -51,7 +63,5 @@ $.get( "https://www.googleapis.com/blogger/v3/blogs/8527536267022331932/posts?ke
   });
 
 }, "json" );
-
-
 
 });

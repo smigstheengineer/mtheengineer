@@ -6,20 +6,29 @@ body {
   background-color: white;
 }
 
+.bottom {
+  background-color: #F6F6F6;
+}
+
+.top {
+  background-color: #FFF056;
+}
+
 .Header {
   padding: 1rem;
+  text-align: right;
 }
 
 .heroContainer {
   background: url('http://thestiz.com/wp-content/themes/thestiz/images/header1600.jpg') no-repeat center top fixed;
   display: block;
-  min-height: 300px;
+  min-height: 250px;
   width: 100%;
   margin-top: 0;
 }
 
 .heroContainer__item {
-  color: white;
+  color: #f6f6f6;
   text-align: center;
   margin: 0 0;
 }
@@ -29,11 +38,11 @@ body {
 }
 
 #Override .Header__nav__button {
-  color: #999999;
+  color: #DFE2DB;
 }
 
 #Override .Header__nav__button:hover {
-  background-color: #e5e5e5;
+  background-color: #f6f6f6;
 }
 
 #Override .Header__nav__button:active {
@@ -42,17 +51,31 @@ body {
 
 .Header__nav {
   text-align: center;
+  display: none;
 }
 
-.blogPost__content__image {
-  float: right;
-  width: 34%;
-  margin: 0 0 0 3px;
+.asideContainer {
+  display: none;
+}
+
+@media all and (min-width:800px) {
+.Header__nav {
+  display: block;
+}
+
+.asideContainer {
+  display: block;
+}
+
+#Override .mobile {
+  display: none;
+}
 
 }
 
 .blogPost__title {
   font-size: 30px;
+  color: #191919;
 }
 
 .blogPost__content__text {
@@ -60,9 +83,16 @@ body {
   line-height: 1.5;
 }
 
-.blogPost {
-  margin-bottom: 30px;
+.center{
+  background-color: #191919;
+}
 
+.blogPost {
+  margin-bottom: 25px;
+  background-color: #f6f6f6;
+  color: white;
+  border-radius: 12px;
+  padding: 1rem;
 }
 
 .footer {
@@ -79,6 +109,14 @@ body {
 #Override .video:first-child {
   margin-top: 1em;
 }
+
+.asideContainer__feeds__items {
+  background-color: #f6f6f6;
+  border-radius: 12px;
+  min-height: 300px;
+}
+
+
 
 
 

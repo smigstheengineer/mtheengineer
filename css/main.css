@@ -114,7 +114,16 @@ body {
   background-color: #f6f6f6;
   border-radius: 12px;
   min-height: 300px;
+  margin-bottom: 10px;
 }
+
+.asideContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
 
 
 
